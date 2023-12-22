@@ -6,12 +6,10 @@ class HYHomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('美食钢厂'),
-        centerTitle: true,
-      ),
-      body: const HYHomeContent(),
+    Scaffold.of(context);
+
+    return const Scaffold(
+      body: HYHomeContent(),
     );
   }
 }

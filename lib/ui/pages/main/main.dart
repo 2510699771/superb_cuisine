@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../home/home_appbar.dart';
+import '../home/home_drawer.dart';
 import './initialize_items.dart';
 
 class HYMainScreen extends StatefulWidget {
@@ -31,6 +33,8 @@ class _HYMainScreenState extends State<HYMainScreen> {
           });
         },
       ),
+      appBar: HYHomeAppBar(context),
+      drawer: HYHomeDrawer(),
     );
   }
 }
